@@ -1,1 +1,754 @@
-/* Your styles go here */
+
+*
+{
+    box-sizing: border-box;
+}
+.portfolio
+{
+    
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+ .portfolio::-webkit-scrollbar
+{
+    display: none;
+}
+
+.portfolio img{
+       width:40px;
+      
+}
+.portfolio > .top
+{
+height: 70px;
+width: inherit;
+position: fixed;
+background-color: rgb(220, 233, 233);
+display: flex;
+justify-content: flex-start;
+margin: 0px;
+top:0;
+align-items: center;
+z-index: 3;
+overflow: hidden;
+
+}
+
+.portfolio > .top ul
+{
+    display: flex;
+    list-style: none;
+}
+
+.portfolio > .top ul i
+{
+    color: white;
+}
+
+.portfolio > .top span
+{
+  margin-left: 4px;
+  margin-right: 50px;
+  justify-content: left;
+}
+.portfolio > .top > .menu
+{
+    display: flex;
+    width: fit-content;
+    align-content: right;
+    
+    
+
+
+}
+
+.portfolio > .top > .menu ul 
+{
+    display: flex;
+    justify-content: right;
+    align-content: right;
+    list-style: none;
+    padding-right: 0px;
+    margin-right: 20px;
+    
+}
+
+.portfolio > .top > .menu ul  li
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 10px;
+    margin-right: 70px;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+
+}
+.portfolio > .top > .menu ul  li a
+{
+   text-decoration: none; 
+   color: black;
+   align-items: center;
+   transition: height 1s;
+}
+.portfolio > .top > .menu ul  li a:hover
+{
+    height: 5px;
+}
+.portfolio > .section
+{
+    height: calc(100vh - 70px);
+    width: 100%;
+    margin-top: 0px 0px;
+    top: 0;
+    
+}
+
+
+
+  .portfolio > .section > .hero
+{
+    width: 100%;
+    height: calc(100vh - 16px);
+    background: #5a5959;
+    display: flex;
+    
+    
+}
+.portfolio > .section > .hero >.wrapper
+    {
+        width: 90%;
+        height: 100%;
+        margin:70px;
+        display:flex;
+        flex-direction: row;
+       justify-content: space-between;
+        
+        
+} 
+
+    .portfolio > .section > .hero >.wrapper > .left_hero
+
+    {
+        
+        height: 700px;
+        justify-content: center;
+        padding-right: 10px;
+        padding-top: 20px;
+        flex-direction: column;
+        overflow: hidden;
+
+
+    }
+
+    .portfolio > .section > .hero >.wrapper > .left_hero img
+
+    {
+        border: 1px solid rgb(247, 228, 228);
+        border-radius: 50%;
+        height: 500px;
+        width:400px;
+        overflow: hidden;
+        
+    }
+    
+    .portfolio > .section > .hero > .wrapper > .right_hero
+
+    {
+        flex: 0.5;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+        padding-top: 90px;
+        align-items: center;
+        padding: 20px;
+        
+        
+    }
+.portfolio > .section > .about   /* about section design */
+{
+    height:inherit;
+    background-color: rgb(118, 118, 121);
+    display: flex;
+    margin: 0px;
+    padding-top: 50px;
+
+    
+}
+
+.portfolio > .section > .about > .left
+{
+  flex: 50%;
+}
+
+.portfolio > .section > .about > .left img
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    height: 200px;
+    padding: 30px 30px;
+}
+
+.portfolio > .section > .about > .right
+{
+    flex: 50%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+
+}
+.portfolio > .section > .about > .right button
+{
+
+    background-color: rgb(238, 234, 234);
+}
+
+.portfolio > .section > .about > .right button a
+{
+    color: aliceblue;
+}
+
+.portfolio > .section > .about > .right button:hover
+{
+    background: rgb(129, 21, 21);
+    color: black;
+}
+.portfolio > .section > .work
+{
+ height: inherit;
+ background-color: rgb(209, 206, 202);
+ margin-top: 0px 0px;
+ padding-top: 10px;
+ display: flex;
+ justify-content: space-between;
+}
+.portfolio > .section > .work h2
+{
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-right: 250px;
+    margin-left: 0px;
+    
+}
+.portfolio > .section > .work > .left
+{
+    flex: 50%;
+    justify-content: center;
+    padding-top: 55px;
+}
+.portfolio > .section > .work > .left p
+{
+    width: 80%;
+    padding-left: 10px;
+}
+.portfolio > .section > .work > .left img
+{
+    width:80%;
+    height: 250px;
+}
+.portfolio > .section > .work > h1
+{
+    margin-right: 200px;
+}
+.portfolio > .section > .work > .right
+
+{
+    flex: 20%;
+    justify-content: center;
+    padding-top: 55px;
+    
+}
+.portfolio > .section > .work > .right img
+{
+    width:80%;
+    height: 250px;
+}
+.portfolio > .section > .knowledge
+{
+ height: inherit;
+ background-image: url(../images/back.jpg);
+ background-position: 15%;
+ color: white;
+ padding-top: 50px;
+ display: flex;
+}
+
+.portfolio > .section > .knowledge h2,h3
+{
+    color: rgb(248, 200, 200);
+}
+.portfolio > .section > .knowledge > .front-end
+{
+   flex: 30%;
+   display: flex;
+   flex-direction: column;
+   padding-top: 50px;
+   
+}
+.portfolio > .section > .knowledge > .front-end table
+{
+    width: 50px;
+}
+.portfolio > .section > .knowledge  table
+
+{
+    color: white;
+    height: 400px;
+}
+
+.portfolio > .section > .knowledge > .others
+{
+   flex: 100%;
+   flex-direction: column;
+   padding-top: 50px;
+   font-weight: bold;
+   
+   
+}
+.portfolio > .section > .knowledge > .others h3
+{
+  text-align: center;
+}
+.portfolio > .section > .knowledge > .others ul li
+
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    justify-content: space-between;
+    background-color: rgb(63, 60, 55);
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-right:200px ;
+    
+}
+
+.portfolio > .section > .knowledge > .back-end
+
+{
+    flex: 30%;
+    flex-direction: column;
+    padding-top: 50PX;
+    
+}
+
+.portfolio > .section > .contact
+{
+ height: inherit;
+ background-color: rgb(7, 6, 6);
+ display: flex;
+}
+.portfolio > .section > .contact > .left
+{
+flex: 50%;
+flex-direction: column;
+justify-content: space-between;
+padding-top: 70px;
+}
+.portfolio > .section > .contact > .left h4
+{
+    margin-left: 50px;
+    color: bisque;   
+}
+
+.portfolio > .section > .contact > .left .social-menu
+{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+}
+
+.portfolio > .section > .contact > .left .social-menu i
+{
+    color: #fff;
+    width: 40px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.portfolio > .section > .contact > .right
+{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    color: aliceblue;
+    flex: 40%;
+}
+.portfolio > .section > .contact > .right ul li
+{
+    list-style: none;
+    padding-top: 60px;
+    flex: 40%;
+    margin-right: 100px;
+}
+.portfolio > .section > .footer 
+{
+   background-color: white;
+    color:rgb(14, 15, 15);
+    text-align: center;
+    margin-top: 0%;
+    justify-content: last baseline;
+    bottom: 0;
+    z-index: 3 !important;
+
+}
+@media screen and ( max-width: 600px )
+     {
+         .portfolio > .top
+         {
+           height: 20px;
+         }
+        .portfolio > .top ul
+        {
+            display: none;
+        }
+        .portfolio > .top > .menu
+        {
+            width: 100%;
+        }
+        .portfolio > .top > .menu ul
+        {
+            margin-left: 0px;
+            padding-left: 0px;
+        }
+        .portfolio > .top > .menu ul  li
+        {
+            margin-right: 0px;
+            font-size: 6px;
+            margin-left: 15px;
+
+        }
+        .portfolio > .section
+        {
+            height: calc(100vh - 16px);
+        }
+        .portfolio > .section > .hero >.wrapper
+        {
+            width:100%;
+            margin-top:0px ;
+            margin-left: 40px;
+            align-content: center;
+        }
+        .portfolio > .section > .hero >.wrapper > .left_hero
+        {
+            height: 500px;
+            padding-top: 40px;
+
+        }
+        .portfolio > .section > .hero >.wrapper > .left_hero img
+        {
+            height: 70px;
+            width:70px;
+            margin-right: 50px;
+            justify-content: center;
+        }
+        .portfolio > .section > .hero > .wrapper > .right_hero 
+        {
+           font-size: 5px;
+           margin-top: 40px;
+           margin-right: 20px;
+           width: 100px;
+           height: 50%;
+           
+        }
+        .portfolio > .section > .about /*about section*/
+        {
+            height:calc(100vh - 2px);
+            padding-top: 0px;
+            display: flex;
+            flex-direction: row;
+
+        }
+        .portfolio > .section > .about > .left
+        {
+            
+            padding-top: 0px;
+            margin-top: 0px;
+            
+
+        }
+        .portfolio > .section > .about > .left img
+        {
+            width: 100px;
+            height:80px;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 30px;
+            padding: 20px 0px;
+           
+        }
+        .portfolio > .section > .about > .right
+        {
+            
+            font-size: 4px;
+            padding-top: 0px;
+            padding-left: 20px;
+            justify-content: left;
+            width: 50%;
+            
+        }
+        .portfolio > .section > .about > .right h3
+        {
+            padding-top: 10px;
+        } 
+        .portfolio > .section > .about > .right p
+        {
+            width: 100px;
+            height: 40px;
+            align-items: center;
+            padding-top: 1px;
+            
+        }
+        .portfolio > .section > .about > .right hr
+        {
+           display: none;
+        }
+        .portfolio > .section > .about > .right button
+        {
+            width: 40px;
+            height: 9px;
+            font-size: 2px;
+            padding-top: 0px;
+            align-items: center;
+        }
+
+        /*work section*/
+
+        .portfolio > .section > .work
+        {
+            
+            
+           width: 100%;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+
+        }
+        .portfolio > .section > .work > .left
+        {
+            display: flex;
+            width: 30%;
+            height: 100px;
+            padding-left: 10px;
+            flex-direction: column;
+            justify-content: flex-end;
+          padding-top: 0px;
+          margin-right: 0px;
+          margin-left: 0px;
+          
+        }
+        .portfolio > .section > .work > .left h2
+        {
+            font-size: 4px;
+            padding-top: 0px;
+        }
+        .portfolio > .section > .work > .left img
+        {
+            height: 90px;
+            width: 90px;
+            padding-top: 0px;
+            padding-left: 10px;
+            float: right;
+        }
+        .portfolio > .section > .work > .left p
+        {
+            font-size:4px;
+            width: 70px;
+            margin-left: 10px;
+            
+        }
+        
+        .portfolio > .section > .work  h1
+        {
+           font-size: 4px;
+           display: none;
+        }
+        .portfolio > .section > .work > .right 
+        {
+            height: 100px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 0px;
+            margin-top: 0px ;
+            padding-top: 0px;
+            margin-right: 0px;
+            margin-left: 60px;
+           
+            
+            
+        }
+        .portfolio > .section > .work > .right img
+        {
+            height: 40px;
+            width: 100px;
+            margin-top: 0px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            align-items: center;
+         }
+         .portfolio > .section > .work > .right h2
+         {
+             font-size: 4px;
+             padding-top: 0px;
+             width: 100px;
+         }
+        .portfolio > .section > .work > .right p
+        {
+            font-size: 4px;
+            width: 100px;
+            height: 20px;
+            padding-top: 0px;
+            
+        }
+
+        .portfolio > .section > .knowledge
+
+        {
+            background-position: 5%;
+            padding-top: 5px;
+        }
+        .portfolio > .section > .knowledge h2,h3
+        {
+            font-size: 4px;
+            padding: 3px;
+        }
+        .portfolio > .section > .knowledge h2
+        {
+            margin-top: 15px;
+        }
+        .portfolio > .section > .knowledge > .front-end
+        {
+            padding-top: 20px;
+            margin-left: 0px;
+            
+        }
+        .portfolio > .section > .knowledge > .front-end table
+        {
+            padding-top: 0px;
+            padding-right: 20px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+            width: 25px;
+            height: 70px;
+            font-size: 7px;
+           
+        }
+        .portfolio > .section > .knowledge > .front-end img
+        {
+            width: 9px;
+            padding-left: 0px;
+            margin-left: 10px;
+       }
+       .portfolio > .section > .knowledge > .others
+       {
+           margin-top: 15px;
+           margin-left: 0px;
+           padding-top: 0px;
+           height: 70px;
+           width: 90px;
+           align-content: center;
+           justify-content: center;
+       }
+       .portfolio > .section > .knowledge > .others h3
+       {
+           text-align: left;
+           padding-top: 10px;
+       }
+       .portfolio > .section > .knowledge > .others ul
+       {
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-left: 10px;
+       }
+       .portfolio > .section > .knowledge > .others ul li
+       {
+          width: 70px;
+          padding-top: 0px;
+          padding-left: 0px;
+          margin-top: 0px;
+          height: 17px;
+          margin-right: 30px;
+          margin-left: 0px;
+          font-size: 4px;
+       }
+       .portfolio > .section > .knowledge > .back-end
+       {
+           
+           width: 50px;
+           margin-right: 10px;
+           padding-top: 22px;
+
+           
+       }
+       .portfolio > .section > .knowledge > .back-end img
+       {
+           width: 9px;
+       }
+       .portfolio > .section > .knowledge > .back-end table
+       {
+           font-size: 7px;
+           height: 70px;
+       }
+       .portfolio > .section > .contact
+       {
+           font-size: 7px;
+           
+       }
+       .portfolio > .section > .contact > .left
+       {
+           padding-top: 10px;
+           margin-top: 0px;
+           height: 30px;
+       }
+       .portfolio > .section > .contact > .left .social-menu
+       {
+           height: 70px;
+           
+       }
+       .portfolio > .section > .contact > .left .social-menu i
+       {
+           height: 20px;
+       }
+       .portfolio > .section > .contact > .right
+       {
+        
+           width: 70px;
+           height: 70%;
+           padding-top: 15px;
+           font-size: 4px;
+       }
+       .portfolio > .section > .contact > .right ul li
+       {
+           height: 10px;
+           width: 40px;
+           padding-left: 0px;
+           padding-top: 10px;
+           margin-top: 5px;
+          
+       }
+        }
+
+
